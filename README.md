@@ -11,7 +11,7 @@ o con un servidor local.
 
 - `index.html`: la landing completa (hero, cómo funciona, módulos, planes y precios, preguntas frecuentes, formulario de demo).
 - `assets/css/`: `styles.css` (base visual de GENEOS), `product.css` (componentes de producto y temas de color) y `site.css` (header y footer propios).
-- `assets/js/`: `main.js` (menú móvil, marquesina de logos) y `product.js` (formulario de demo por WhatsApp y preguntas frecuentes).
+- `assets/js/`: `main.js` (menú móvil, marquesina de logos), `product.js` (formulario de demo por WhatsApp y preguntas frecuentes) y `site.js` (cierra el menú móvil al elegir una opción).
 - `assets/img/`, `assets/descargas/`: solo las imágenes y archivos que usa la página.
 - `404.html`, `robots.txt` y `sitemap.xml`.
 - `.github/workflows/pages.yml`: publicación en GitHub Pages (se ejecuta a mano).
@@ -26,7 +26,8 @@ y abrir http://localhost:8000/
 
 ## Editar
 
-- Textos, precios e imágenes: directamente en `index.html`.
+- Textos, precios e imágenes: directamente en los `index.html`.
+- Colores del header: `assets/css/site.css`, bloque `.pp-theme-gerp` (variables `--hd-*`).
 - Colores del producto: `assets/css/product.css`, bloque `.pp-theme-gerp`.
 - Formulario de demo: arma un mensaje de WhatsApp al +54 9 249 452-1418 (`assets/js/product.js`). Cuando exista un backend, cambiar el `action` del formulario.
 
