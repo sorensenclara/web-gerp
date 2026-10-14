@@ -100,7 +100,15 @@
    "name": "¿Qué plan me conviene?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "LITE es para emprendimientos que necesitan gestionar clientes, proveedores, inventario y facturación con hasta 3 usuarios. CORE suma el circuito completo de compras y ventas con múltiples usuarios. PLUS agrega CRM y MRP para gestionar oportunidades comerciales y producción. Si tenés dudas, escribinos y te asesoramos."
+    "text": "GERP Lite: para pequeñas empresas y emprendimientos que necesitan ordenar su facturación, sus clientes, sus proveedores y su stock, con hasta 3 usuarios.GERP Core: para medianas empresas que necesitan el circuito completo de compras y ventas, informes contables y varios usuarios con distintos niveles de acceso.GERP Plus: para empresas que quieren gestionar todas sus áreas en un solo sistema, sumando oportunidades comerciales (CRM) y producción (MRP).Podés ver las diferencias en el comparador de planes. Si tenés dudas, escribinos y te asesoramos."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿GERP emite factura electrónica?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sí. GERP permite emitir facturas electrónicas autorizadas por ARCA (ex AFIP), con CAE. Consultanos su alcance según el plan que elijas."
    }
   },
   {
@@ -146,8 +154,8 @@
  "offers": [
   {
    "@type": "Offer",
-   "name": "GERP LITE",
-   "description": "Plan base pequeños emprendimientos",
+   "name": "GERP Lite",
+   "description": "Pequeñas empresas y emprendimientos",
    "price": 89250,
    "priceCurrency": "ARS",
    "priceSpecification": {
@@ -157,12 +165,12 @@
     "unitText": "mes",
     "valueAddedTaxIncluded": false
    },
-   "url": "https://gerp.ar/#planes"
+   "url": "https://gerp.ar/lite/"
   },
   {
    "@type": "Offer",
-   "name": "GERP CORE",
-   "description": "Circuito completo Compras y Ventas",
+   "name": "GERP Core",
+   "description": "Medianas empresas",
    "price": 178500,
    "priceCurrency": "ARS",
    "priceSpecification": {
@@ -172,12 +180,12 @@
     "unitText": "mes",
     "valueAddedTaxIncluded": false
    },
-   "url": "https://gerp.ar/#planes"
+   "url": "https://gerp.ar/core/"
   },
   {
    "@type": "Offer",
-   "name": "GERP PLUS",
-   "description": "Esencial con CRM y MRP",
+   "name": "GERP Plus",
+   "description": "Gestión integral con CRM y producción",
    "price": 446250,
    "priceCurrency": "ARS",
    "priceSpecification": {
@@ -187,7 +195,7 @@
     "unitText": "mes",
     "valueAddedTaxIncluded": false
    },
-   "url": "https://gerp.ar/#planes"
+   "url": "https://gerp.ar/plus/"
   }
  ]
 }</script>
@@ -223,7 +231,7 @@
 </button>
       <nav class="site-nav" id="menu" aria-label="Navegación principal">
         <ul>
-<li><a href="#como-funciona">Cómo funciona</a></li><li><a href="#modulos">Módulos</a></li><li><a href="#planes">Planes</a></li><li><a href="#faq">Preguntas</a></li>          <li class="nav-cta"><a href="#demo">Solicitar demo</a></li>
+<li><a href="#como-funciona">Cómo funciona</a></li><li><a href="#modulos">Módulos</a></li><li><a href="#planes">Planes</a></li><li><a href="#comparar">Comparar</a></li><li><a href="#faq">Preguntas</a></li>          <li class="nav-cta"><a href="#demo">Solicitar demo</a></li>
         </ul>
       </nav>
     </div>
@@ -392,28 +400,74 @@
   </div>
 </section>
 
+<section class="pp-section pp-soft" id="sectores">
+  <div class="pp-container">
+    <header class="pp-head">
+<p class="pp-eyebrow">Sectores</p>      <h2>Pensado para tu sector</h2>
+    </header>
+    <ul class="pp-modules-grid pp-modules-4">
+      <li>
+        <div class="pp-module">
+          <span class="pp-module-ico"><img src="assets/img/sectores/mayoristas.svg" alt="" loading="lazy" decoding="async"></span>
+          <h3>Mayoristas</h3>
+          <p>Inventario, pedidos, facturación y seguimiento de operaciones a gran escala.</p>
+        </div>
+      </li>
+      <li>
+        <div class="pp-module">
+          <span class="pp-module-ico"><img src="assets/img/sectores/retail.svg" alt="" loading="lazy" decoding="async"></span>
+          <h3>Retail y minoristas</h3>
+          <p>Gestión integral para cadenas y sucursales, con control de inventario y ventas.</p>
+        </div>
+      </li>
+      <li>
+        <div class="pp-module">
+          <span class="pp-module-ico"><img src="assets/img/sectores/manufactureros.svg" alt="" loading="lazy" decoding="async"></span>
+          <h3>Manufactureros</h3>
+          <p>Producción, materias primas e inventario en el mismo sistema, con GERP Plus.</p>
+        </div>
+      </li>
+      <li>
+        <div class="pp-module">
+          <span class="pp-module-ico"><img src="assets/img/sectores/laboratorios.svg" alt="" loading="lazy" decoding="async"></span>
+          <h3>Laboratorios</h3>
+          <p>Trazabilidad de insumos, con control de vencimientos y números de serie.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
 <section class="pp-section pp-white" id="planes" aria-labelledby="planes-title">
   <div class="pp-container">
     <header class="pp-head">
-<p class="pp-eyebrow">Planes</p>      <h2 id="planes-title">Elegí el plan de GERP que mejor se adapte a tu empresa</h2>
-<p>Te acompañamos en la implementación, la capacitación y el soporte de la plataforma.</p>    </header>
+      <p class="pp-eyebrow">Planes</p>
+      <h2 id="planes-title">Elegí el plan de GERP que mejor se adapte a tu empresa</h2>
+      <p>Te acompañamos en la implementación, la capacitación y el soporte de la plataforma.</p>
+    </header>
     <div class="pp-plans-grid pp-plans-3">
-      <article class="pp-plan" style="--pp-plan-color: #294b9b">
-        <header class="pp-plan-head">
-          <h3 class="pp-plan-name">LITE</h3>
-<p class="pp-plan-sub">Plan base pequeños emprendimientos</p>        </header>
-        <div class="pp-plan-body">
-          <p class="pp-plan-label">Abono mensual</p>
-          <p class="pp-plan-price">$89.250</p>
-          <p class="pp-plan-tax">+ IVA por mes (*)</p>
-          <hr class="pp-plan-sep">
-          <p class="pp-plan-label">Implementación</p>
-          <p class="pp-plan-impl"><span class="pp-plan-impl-amount">$446.250</span> <span class="pp-plan-impl-tax">+ IVA</span></p>
-<hr class="pp-plan-sep">          <ul class="pp-plan-feats"><li><svg class="icon bi" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+<article class="pp-plan pp-plan-x" id="plan-lite" style="--pp-plan-color: #254d99; --pp-btn: #254d99; --pp-btn-hover: #3673b9; --pp-plan-accent: #3673b9;">
+  <header class="pp-plan-head">
+    <span class="pp-plan-icon"><img src="assets/img/2024/11/G-ERP-Lite.svg" alt="" width="44" height="42"></span>
+    <div>
+      <p class="pp-plan-brand">GERP</p>
+      <h3 class="pp-plan-name">LITE</h3>
+      <p class="pp-plan-sub">Pequeñas empresas y emprendimientos</p>
+    </div>
+  </header>
+  <div class="pp-plan-body">
+    <p class="pp-plan-label">Abono mensual</p>
+    <p class="pp-plan-price">$89.250</p>
+    <p class="pp-plan-tax">+ IVA por mes (*)</p>
+    <hr class="pp-plan-sep">
+    <p class="pp-plan-label">Implementación</p>
+    <p class="pp-plan-impl"><span class="pp-plan-impl-amount">$446.250</span> <span class="pp-plan-impl-tax">+ IVA · pago único</span></p>
+    <hr class="pp-plan-sep">
+    <ul class="pp-plan-feats"><li><svg class="icon bi" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
   <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
   <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
 </svg>
-<span>Máximo 3 usuarios</span></li><li><svg class="icon bi" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+<span>Hasta 3 usuarios</span></li><li><svg class="icon bi" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
   <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
   <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
 </svg>
@@ -426,24 +480,31 @@
   <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
 </svg>
 <span>Contabilidad y Facturación</span></li></ul>
-          <a class="pp-btn pp-btn-accent pp-plan-cta" href="#demo">Solicitar demo <svg class="icon bi" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+    <div class="pp-plan-actions">
+      <a class="pp-btn pp-btn-primary pp-plan-cta" href="#demo" data-version="lite">Solicitar demo <svg class="icon bi" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
 </svg>
 </a>
-        </div>
-      </article>
-      <article class="pp-plan is-featured" style="--pp-plan-color: #99146a">
-        <header class="pp-plan-head">
-          <h3 class="pp-plan-name">CORE</h3>
-<p class="pp-plan-sub">Circuito completo Compras y Ventas</p>        </header>
-        <div class="pp-plan-body">
-          <p class="pp-plan-label">Abono mensual</p>
-          <p class="pp-plan-price">$178.500</p>
-          <p class="pp-plan-tax">+ IVA por mes (*)</p>
-          <hr class="pp-plan-sep">
-          <p class="pp-plan-label">Implementación</p>
-          <p class="pp-plan-impl"><span class="pp-plan-impl-amount">$892.500</span> <span class="pp-plan-impl-tax">+ IVA</span></p>
-<hr class="pp-plan-sep">          <ul class="pp-plan-feats"><li><svg class="icon bi" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+<a class="pp-plan-more" href="lite/">Conocer el plan <span aria-hidden="true">→</span><span class="sr-only"> GERP Lite</span></a>    </div>
+  </div>
+</article><article class="pp-plan pp-plan-x is-featured" id="plan-core" style="--pp-plan-color: #138338; --pp-btn: #138338; --pp-btn-hover: #0b6b33; --pp-plan-accent: #1e9f4b;">
+  <header class="pp-plan-head">
+    <span class="pp-plan-icon"><img src="assets/img/2024/11/G-ERP-Core.svg" alt="" width="44" height="42"></span>
+    <div>
+      <p class="pp-plan-brand">GERP</p>
+      <h3 class="pp-plan-name">CORE</h3>
+      <p class="pp-plan-sub">Medianas empresas</p>
+    </div>
+  </header>
+  <div class="pp-plan-body">
+    <p class="pp-plan-label">Abono mensual</p>
+    <p class="pp-plan-price">$178.500</p>
+    <p class="pp-plan-tax">+ IVA por mes (*)</p>
+    <hr class="pp-plan-sep">
+    <p class="pp-plan-label">Implementación</p>
+    <p class="pp-plan-impl"><span class="pp-plan-impl-amount">$892.500</span> <span class="pp-plan-impl-tax">+ IVA · pago único</span></p>
+    <hr class="pp-plan-sep">
+    <ul class="pp-plan-feats"><li><svg class="icon bi" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
   <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
   <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
 </svg>
@@ -468,24 +529,31 @@
   <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
 </svg>
 <span>Módulo Contabilidad</span></li></ul>
-          <a class="pp-btn pp-btn-accent pp-plan-cta" href="#demo">Solicitar demo <svg class="icon bi" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+    <div class="pp-plan-actions">
+      <a class="pp-btn pp-btn-primary pp-plan-cta" href="#demo" data-version="core">Solicitar demo <svg class="icon bi" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
 </svg>
 </a>
-        </div>
-      </article>
-      <article class="pp-plan" style="--pp-plan-color: #5b1d5f">
-        <header class="pp-plan-head">
-          <h3 class="pp-plan-name">PLUS</h3>
-<p class="pp-plan-sub">Esencial con CRM y MRP</p>        </header>
-        <div class="pp-plan-body">
-          <p class="pp-plan-label">Abono mensual</p>
-          <p class="pp-plan-price">$446.250</p>
-          <p class="pp-plan-tax">+ IVA por mes (*)</p>
-          <hr class="pp-plan-sep">
-          <p class="pp-plan-label">Implementación</p>
-          <p class="pp-plan-impl"><span class="pp-plan-impl-amount">$1.785.000</span> <span class="pp-plan-impl-tax">+ IVA</span></p>
-<hr class="pp-plan-sep">          <ul class="pp-plan-feats"><li><svg class="icon bi" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+<a class="pp-plan-more" href="core/">Conocer el plan <span aria-hidden="true">→</span><span class="sr-only"> GERP Core</span></a>    </div>
+  </div>
+</article><article class="pp-plan pp-plan-x" id="plan-plus" style="--pp-plan-color: #921d74; --pp-btn: #921d74; --pp-btn-hover: #b82d88; --pp-plan-accent: #b82d88;">
+  <header class="pp-plan-head">
+    <span class="pp-plan-icon"><img src="assets/img/2024/11/G-ERP-Plus.svg" alt="" width="44" height="42"></span>
+    <div>
+      <p class="pp-plan-brand">GERP</p>
+      <h3 class="pp-plan-name">PLUS</h3>
+      <p class="pp-plan-sub">Gestión integral con CRM y producción</p>
+    </div>
+  </header>
+  <div class="pp-plan-body">
+    <p class="pp-plan-label">Abono mensual</p>
+    <p class="pp-plan-price">$446.250</p>
+    <p class="pp-plan-tax">+ IVA por mes (*)</p>
+    <hr class="pp-plan-sep">
+    <p class="pp-plan-label">Implementación</p>
+    <p class="pp-plan-impl"><span class="pp-plan-impl-amount">$1.785.000</span> <span class="pp-plan-impl-tax">+ IVA · pago único</span></p>
+    <hr class="pp-plan-sep">
+    <ul class="pp-plan-feats"><li><svg class="icon bi" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
   <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
   <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
 </svg>
@@ -518,14 +586,144 @@
   <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
 </svg>
 <span>Módulo MRP</span></li></ul>
-          <a class="pp-btn pp-btn-accent pp-plan-cta" href="#demo">Solicitar demo <svg class="icon bi" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+    <div class="pp-plan-actions">
+      <a class="pp-btn pp-btn-primary pp-plan-cta" href="#demo" data-version="plus">Solicitar demo <svg class="icon bi" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
 </svg>
 </a>
-        </div>
-      </article>
+<a class="pp-plan-more" href="plus/">Conocer el plan <span aria-hidden="true">→</span><span class="sr-only"> GERP Plus</span></a>    </div>
+  </div>
+</article>    </div>
+    <p class="pp-note">(*) Precios en pesos argentinos, más IVA. Precios vigentes hasta diciembre de 2026.</p>
+  </div>
+</section>
+
+<section class="pp-section pp-cmp-section" id="comparar" aria-labelledby="comparar-title">
+  <div class="pp-container">
+    <header class="pp-head">
+      <p class="pp-eyebrow">Comparar planes</p>
+      <h2 id="comparar-title">¿Qué incluye cada plan?</h2>
+      <p>Las diferencias principales entre GERP Lite, Core y Plus, para elegir el adecuado para tu negocio.</p>
+    </header>
+    <div class="pp-cmp" data-cmp data-show="core">
+      <div class="pp-cmp-tabs" role="group" aria-label="Plan a mostrar">
+<button type="button" data-plan="lite" style="--pp-plan-color: #254d99; --pp-btn: #254d99; --pp-btn-hover: #3673b9; --pp-plan-accent: #3673b9;" aria-pressed="false"><img src="assets/img/2024/11/G-ERP-Lite.svg" alt="" width="22" height="21">LITE</button><button type="button" data-plan="core" style="--pp-plan-color: #138338; --pp-btn: #138338; --pp-btn-hover: #0b6b33; --pp-plan-accent: #1e9f4b;" aria-pressed="true"><img src="assets/img/2024/11/G-ERP-Core.svg" alt="" width="22" height="21">CORE</button><button type="button" data-plan="plus" style="--pp-plan-color: #921d74; --pp-btn: #921d74; --pp-btn-hover: #b82d88; --pp-plan-accent: #b82d88;" aria-pressed="false"><img src="assets/img/2024/11/G-ERP-Plus.svg" alt="" width="22" height="21">PLUS</button>      </div>
+      <table class="pp-cmp-table">
+        <caption class="sr-only">Comparación de funcionalidades de GERP Lite, Core y Plus</caption>
+        <thead>
+          <tr>
+            <th scope="col" class="pp-cmp-feat"><span class="sr-only">Funcionalidad</span></th>
+<th scope="col" data-col="lite" style="--pp-plan-color: #254d99; --pp-btn: #254d99; --pp-btn-hover: #3673b9; --pp-plan-accent: #3673b9;"><img src="assets/img/2024/11/G-ERP-Lite.svg" alt="" width="34" height="32"><span>LITE</span></th><th scope="col" data-col="core" style="--pp-plan-color: #138338; --pp-btn: #138338; --pp-btn-hover: #0b6b33; --pp-plan-accent: #1e9f4b;"><img src="assets/img/2024/11/G-ERP-Core.svg" alt="" width="34" height="32"><span>CORE</span></th><th scope="col" data-col="plus" style="--pp-plan-color: #921d74; --pp-btn: #921d74; --pp-btn-hover: #b82d88; --pp-plan-accent: #b82d88;"><img src="assets/img/2024/11/G-ERP-Plus.svg" alt="" width="34" height="32"><span>PLUS</span></th>          </tr>
+        </thead>
+        <tbody class="pp-cmp-basic">
+          <tr class="pp-cmp-group"><th scope="colgroup" colspan="4">Funcionalidades básicas</th></tr>
+          <tr><th scope="row">Usuarios</th><td data-col="lite" style="--pp-plan-color: #254d99"><span class="pp-cmp-text">Hasta 3</span></td><td data-col="core" style="--pp-plan-color: #138338"><span class="pp-cmp-text">Múltiples, con permisos</span></td><td data-col="plus" style="--pp-plan-color: #921d74"><span class="pp-cmp-text">Múltiples, con permisos</span></td></tr>
+          <tr><th scope="row">Inventario</th><td data-col="lite" style="--pp-plan-color: #254d99"><span class="pp-cmp-yes"><svg class="icon bi" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+  <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+</svg>
+<span class="sr-only">Incluido</span></span></td><td data-col="core" style="--pp-plan-color: #138338"><span class="pp-cmp-yes"><svg class="icon bi" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+  <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+</svg>
+<span class="sr-only">Incluido</span></span></td><td data-col="plus" style="--pp-plan-color: #921d74"><span class="pp-cmp-yes"><svg class="icon bi" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+  <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+</svg>
+<span class="sr-only">Incluido</span></span></td></tr>
+          <tr><th scope="row">Compras y ventas</th><td data-col="lite" style="--pp-plan-color: #254d99"><span class="pp-cmp-text">Módulo integrado</span></td><td data-col="core" style="--pp-plan-color: #138338"><span class="pp-cmp-text">Módulos separados</span></td><td data-col="plus" style="--pp-plan-color: #921d74"><span class="pp-cmp-text">Módulos separados</span></td></tr>
+          <tr><th scope="row">Facturación y contabilidad</th><td data-col="lite" style="--pp-plan-color: #254d99"><span class="pp-cmp-text">Módulo integrado</span></td><td data-col="core" style="--pp-plan-color: #138338"><span class="pp-cmp-text">Módulos separados</span></td><td data-col="plus" style="--pp-plan-color: #921d74"><span class="pp-cmp-text">Módulos separados</span></td></tr>
+          <tr><th scope="row">Facturación electrónica ARCA (ex AFIP)</th><td data-col="lite" style="--pp-plan-color: #254d99"><span class="pp-cmp-pending">A confirmar</span></td><td data-col="core" style="--pp-plan-color: #138338"><span class="pp-cmp-pending">A confirmar</span></td><td data-col="plus" style="--pp-plan-color: #921d74"><span class="pp-cmp-pending">A confirmar</span></td></tr>
+          <tr><th scope="row">CRM: oportunidades comerciales</th><td data-col="lite" style="--pp-plan-color: #254d99"><span class="pp-cmp-no" aria-hidden="true">—</span><span class="sr-only">No incluido</span></td><td data-col="core" style="--pp-plan-color: #138338"><span class="pp-cmp-no" aria-hidden="true">—</span><span class="sr-only">No incluido</span></td><td data-col="plus" style="--pp-plan-color: #921d74"><span class="pp-cmp-yes"><svg class="icon bi" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+  <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+</svg>
+<span class="sr-only">Incluido</span></span></td></tr>
+          <tr><th scope="row">Producción (MRP)</th><td data-col="lite" style="--pp-plan-color: #254d99"><span class="pp-cmp-no" aria-hidden="true">—</span><span class="sr-only">No incluido</span></td><td data-col="core" style="--pp-plan-color: #138338"><span class="pp-cmp-no" aria-hidden="true">—</span><span class="sr-only">No incluido</span></td><td data-col="plus" style="--pp-plan-color: #921d74"><span class="pp-cmp-yes"><svg class="icon bi" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+  <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+</svg>
+<span class="sr-only">Incluido</span></span></td></tr>
+        </tbody>
+        <tbody class="pp-cmp-advanced" id="cmp-avanzadas-home">
+          <tr class="pp-cmp-group"><th scope="colgroup" colspan="4">Funcionalidades avanzadas</th></tr>
+          <tr><th scope="row">Circuito completo de compras, con autorización</th><td data-col="lite" style="--pp-plan-color: #254d99"><span class="pp-cmp-pending">A confirmar</span></td><td data-col="core" style="--pp-plan-color: #138338"><span class="pp-cmp-yes"><svg class="icon bi" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+  <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+</svg>
+<span class="sr-only">Incluido</span></span></td><td data-col="plus" style="--pp-plan-color: #921d74"><span class="pp-cmp-yes"><svg class="icon bi" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+  <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+</svg>
+<span class="sr-only">Incluido</span></span></td></tr>
+          <tr><th scope="row">Circuito completo de ventas, con autorización</th><td data-col="lite" style="--pp-plan-color: #254d99"><span class="pp-cmp-pending">A confirmar</span></td><td data-col="core" style="--pp-plan-color: #138338"><span class="pp-cmp-yes"><svg class="icon bi" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+  <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+</svg>
+<span class="sr-only">Incluido</span></span></td><td data-col="plus" style="--pp-plan-color: #921d74"><span class="pp-cmp-yes"><svg class="icon bi" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+  <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+</svg>
+<span class="sr-only">Incluido</span></span></td></tr>
+          <tr><th scope="row">Notas de crédito de compras y ventas</th><td data-col="lite" style="--pp-plan-color: #254d99"><span class="pp-cmp-pending">A confirmar</span></td><td data-col="core" style="--pp-plan-color: #138338"><span class="pp-cmp-yes"><svg class="icon bi" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+  <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+</svg>
+<span class="sr-only">Incluido</span></span></td><td data-col="plus" style="--pp-plan-color: #921d74"><span class="pp-cmp-yes"><svg class="icon bi" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+  <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+</svg>
+<span class="sr-only">Incluido</span></span></td></tr>
+          <tr><th scope="row">Lotes y vencimientos</th><td data-col="lite" style="--pp-plan-color: #254d99"><span class="pp-cmp-yes"><svg class="icon bi" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+  <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+</svg>
+<span class="sr-only">Incluido</span></span></td><td data-col="core" style="--pp-plan-color: #138338"><span class="pp-cmp-pending">A confirmar</span></td><td data-col="plus" style="--pp-plan-color: #921d74"><span class="pp-cmp-pending">A confirmar</span></td></tr>
+          <tr><th scope="row">Reportes impositivos (libros IVA, por jurisdicción)</th><td data-col="lite" style="--pp-plan-color: #254d99"><span class="pp-cmp-yes"><svg class="icon bi" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+  <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+</svg>
+<span class="sr-only">Incluido</span></span></td><td data-col="core" style="--pp-plan-color: #138338"><span class="pp-cmp-pending">A confirmar</span></td><td data-col="plus" style="--pp-plan-color: #921d74"><span class="pp-cmp-pending">A confirmar</span></td></tr>
+          <tr><th scope="row">Reportes de cuentas a cobrar y a pagar</th><td data-col="lite" style="--pp-plan-color: #254d99"><span class="pp-cmp-yes"><svg class="icon bi" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+  <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+</svg>
+<span class="sr-only">Incluido</span></span></td><td data-col="core" style="--pp-plan-color: #138338"><span class="pp-cmp-pending">A confirmar</span></td><td data-col="plus" style="--pp-plan-color: #921d74"><span class="pp-cmp-pending">A confirmar</span></td></tr>
+          <tr><th scope="row">Informes personalizados</th><td data-col="lite" style="--pp-plan-color: #254d99"><span class="pp-cmp-pending">A confirmar</span></td><td data-col="core" style="--pp-plan-color: #138338"><span class="pp-cmp-yes"><svg class="icon bi" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+  <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+</svg>
+<span class="sr-only">Incluido</span></span></td><td data-col="plus" style="--pp-plan-color: #921d74"><span class="pp-cmp-pending">A confirmar</span></td></tr>
+          <tr><th scope="row">Leads, equipos de venta y comisiones</th><td data-col="lite" style="--pp-plan-color: #254d99"><span class="pp-cmp-no" aria-hidden="true">—</span><span class="sr-only">No incluido</span></td><td data-col="core" style="--pp-plan-color: #138338"><span class="pp-cmp-no" aria-hidden="true">—</span><span class="sr-only">No incluido</span></td><td data-col="plus" style="--pp-plan-color: #921d74"><span class="pp-cmp-yes"><svg class="icon bi" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+  <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+</svg>
+<span class="sr-only">Incluido</span></span></td></tr>
+          <tr><th scope="row">Listas de materiales y órdenes de producción</th><td data-col="lite" style="--pp-plan-color: #254d99"><span class="pp-cmp-no" aria-hidden="true">—</span><span class="sr-only">No incluido</span></td><td data-col="core" style="--pp-plan-color: #138338"><span class="pp-cmp-no" aria-hidden="true">—</span><span class="sr-only">No incluido</span></td><td data-col="plus" style="--pp-plan-color: #921d74"><span class="pp-cmp-yes"><svg class="icon bi" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+  <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+</svg>
+<span class="sr-only">Incluido</span></span></td></tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td class="pp-cmp-feat"></td>
+<td data-col="lite" style="--pp-plan-color: #254d99; --pp-btn: #254d99; --pp-btn-hover: #3673b9; --pp-plan-accent: #3673b9;"><a class="pp-btn pp-btn-primary pp-cmp-btn" href="#demo" data-version="lite">Solicitar demo<span class="sr-only"> de GERP Lite</span></a></td><td data-col="core" style="--pp-plan-color: #138338; --pp-btn: #138338; --pp-btn-hover: #0b6b33; --pp-plan-accent: #1e9f4b;"><a class="pp-btn pp-btn-primary pp-cmp-btn" href="#demo" data-version="core">Solicitar demo<span class="sr-only"> de GERP Core</span></a></td><td data-col="plus" style="--pp-plan-color: #921d74; --pp-btn: #921d74; --pp-btn-hover: #b82d88; --pp-plan-accent: #b82d88;"><a class="pp-btn pp-btn-primary pp-cmp-btn" href="#demo" data-version="plus">Solicitar demo<span class="sr-only"> de GERP Plus</span></a></td>          </tr>
+        </tfoot>
+      </table>
+      <button type="button" class="pp-cmp-more" aria-expanded="false" aria-controls="cmp-avanzadas-home" hidden>
+        <span class="pp-cmp-more-open">Ver comparación completa</span><span class="pp-cmp-more-close">Ver menos</span> <svg class="icon bi" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+</svg>
+
+      </button>
     </div>
-<p class="pp-note">(*) Precios en pesos argentinos válidos para los meses de Octubre, Noviembre y Diciembre 2026. Actualización bimensual.</p>  </div>
+    <p class="pp-cmp-legend"><span class="pp-cmp-yes"><svg class="icon bi" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+  <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+</svg>
+</span> Incluido · <span class="pp-cmp-no">—</span> No incluido · <span class="pp-cmp-pending">A confirmar</span> dato en validación</p>
+  </div>
 </section>
 
 <section class="pp-cta" style="--pp-cta-img: url('../img/gerp/gerp-cta-1920.webp'); --pp-cta-img-sm: url('../img/gerp/gerp-cta-900.webp'); --pp-cta-pos: right center;">
@@ -598,9 +796,12 @@
     <li><a href="https://lenceriadivina.com.ar/" target="_blank" rel="noopener"><img src="assets/img/2024/03/Divina-Lenceria.webp" alt="Logo de Divina Lenceria" loading="lazy" width="220" height="124"></a></li>
     <li><a href="https://www.instagram.com/korronteaceros/" target="_blank" rel="noopener"><img src="assets/img/2024/08/Clientes-GENEOS_Korronte.webp" alt="Logo de Korronte" loading="lazy" width="220" height="124"></a></li>
     <li><a href="https://gea-srl.com.ar/" target="_blank" rel="noopener"><img src="assets/img/2024/08/Clientes-GENEOS_GEA.webp" alt="Logo de GEA" loading="lazy" width="220" height="124"></a></li>
+    <li><img src="assets/img/clientes/Silos-Emel.webp" alt="Logo de Silos Emel" loading="lazy" width="220" height="124"></li>
   </ul>
 </div>
 </section>
+
+
 
 <section class="pp-section pp-faq-section" id="faq">
   <div class="pp-container pp-faq">
@@ -623,7 +824,11 @@
       </details>
       <details name="faq">
         <summary>¿Qué plan me conviene?</summary>
-        <div class="pp-faq-answer"><p><strong>LITE</strong> es para emprendimientos que necesitan gestionar clientes, proveedores, inventario y facturación con hasta 3 usuarios. <strong>CORE</strong> suma el circuito completo de compras y ventas con múltiples usuarios. <strong>PLUS</strong> agrega CRM y MRP para gestionar oportunidades comerciales y producción. Si tenés dudas, <a href="https://wa.me/5492494521418?text=Hola%2C%20quiero%20que%20me%20asesoren%20sobre%20qu%C3%A9%20plan%20de%20GERP%20me%20conviene">escribinos y te asesoramos</a>.</p></div>
+        <div class="pp-faq-answer"><ul><li><strong><a href="lite/">GERP Lite</a></strong>: para pequeñas empresas y emprendimientos que necesitan ordenar su facturación, sus clientes, sus proveedores y su stock, con hasta 3 usuarios.</li><li><strong><a href="core/">GERP Core</a></strong>: para medianas empresas que necesitan el circuito completo de compras y ventas, informes contables y varios usuarios con distintos niveles de acceso.</li><li><strong><a href="plus/">GERP Plus</a></strong>: para empresas que quieren gestionar todas sus áreas en un solo sistema, sumando oportunidades comerciales (CRM) y producción (MRP).</li></ul><p>Podés ver las diferencias en el <a href="#comparar">comparador de planes</a>. Si tenés dudas, <a href="https://wa.me/5492494521418?text=Hola%2C%20quiero%20que%20me%20asesoren%20sobre%20qu%C3%A9%20plan%20de%20GERP%20me%20conviene">escribinos y te asesoramos</a>.</p></div>
+      </details>
+      <details name="faq">
+        <summary>¿GERP emite factura electrónica?</summary>
+        <div class="pp-faq-answer"><p>Sí. GERP permite emitir facturas electrónicas autorizadas por <strong>ARCA (ex AFIP)</strong>, con CAE. Consultanos su alcance según el plan que elijas.</p></div>
       </details>
       <details name="faq">
         <summary>¿Pueden adaptar el sistema a mi negocio?</summary>
@@ -662,6 +867,13 @@
       <form class="pp-form" action="#" novalidate data-product="GERP">
         <div class="pp-row"><label for="f-nombre">Nombre y apellido<input id="f-nombre" name="nombre" required autocomplete="name" data-wa="Nombre"></label><label for="f-empresa">Empresa<input id="f-empresa" name="empresa" autocomplete="organization" data-wa="Empresa"></label></div>
         <div class="pp-row"><label for="f-email">Email<input id="f-email" name="email" type="email" required autocomplete="email" data-wa="Email"></label><label for="f-telefono">Teléfono / WhatsApp<input id="f-telefono" name="telefono" type="tel" autocomplete="tel" data-wa="Teléfono"></label></div>
+        <fieldset class="pp-radios">
+          <legend>¿Qué plan te interesa?</legend>
+          <label for="v-nose"><input type="radio" id="v-nose" name="plan" value="(plan a definir)" checked> No sé todavía</label>
+          <label for="v-lite"><input type="radio" id="v-lite" name="plan" value="LITE"> GERP Lite</label>
+          <label for="v-core"><input type="radio" id="v-core" name="plan" value="CORE"> GERP Core</label>
+          <label for="v-plus"><input type="radio" id="v-plus" name="plan" value="PLUS"> GERP Plus</label>
+        </fieldset>
         <label for="f-msg">Mensaje<textarea id="f-msg" name="mensaje" placeholder="Contanos brevemente sobre tu empresa y tus necesidades…" data-wa="Mensaje"></textarea></label>
         <div class="pp-form-actions">
           <button type="submit" class="pp-btn pp-btn-primary">Solicitar demo</button>
@@ -684,7 +896,7 @@
       <nav aria-label="GERP">
         <h2 class="footer-title">GERP</h2>
         <ul class="footer-links">
-<li><a href="#como-funciona">Cómo funciona</a></li><li><a href="#modulos">Módulos</a></li><li><a href="#planes">Planes</a></li><li><a href="#faq">Preguntas</a></li>          <li><a href="#demo">Solicitar demo</a></li>
+<li><a href="./">GERP · Inicio</a></li><li><a href="lite/">GERP Lite</a></li><li><a href="core/">GERP Core</a></li><li><a href="plus/">GERP Plus</a></li><li><a href="./#comparar">Comparar planes</a></li>          <li><a href="#demo">Solicitar demo</a></li>
         </ul>
       </nav>
       <nav aria-label="GENEOS">
@@ -696,7 +908,7 @@
       <address class="footer-contact">
         <h2 class="footer-title">Contacto</h2>
         <a class="footer-item" href="https://wa.me/5492494521418" target="_blank" rel="noopener"><span class="footer-icon"><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22z"/><path d="M9.5 9.5c0 2.8 2.2 5 5 5l1-1.2-1.6-1-1 .7a3.6 3.6 0 0 1-1.9-1.9l.7-1-1-1.6z"/></svg>
-</span><span>+549 2494 521418</span></a>
+</span><span>+54 9 2494 521418</span></a>
         <a class="footer-item" href="mailto:info@geneos.com.ar"><span class="footer-icon"><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
 </span><span>info@geneos.com.ar</span></a>
         <a class="footer-item" href="https://maps.app.goo.gl/SG3oBGYpz7ttdvbB8" target="_blank" rel="noopener"><span class="footer-icon"><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
