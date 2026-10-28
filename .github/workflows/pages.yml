@@ -1,15 +1,18 @@
-name: Publicar en GitHub Pages
-# Sitio estático: se publica la carpeta tal cual. Solo corre a mano (workflow_dispatch)
-# para que nada se publique hasta que se decida el lanzamiento.
+name: Publicar GERP desde Web Admin
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
+
 permissions:
   contents: read
   pages: write
   id-token: write
+
 concurrency:
   group: pages
   cancel-in-progress: true
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -17,10 +20,40 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - name: Obtener fuente institucional
+        uses: actions/checkout@v4
         with:
-          path: .
-      - id: deployment
+          repository: sorensenclara/geneos
+          ref: modo-claro-oscuro
+          path: geneos-fuente
+      - name: Obtener generador Web Admin
+        uses: actions/checkout@v4
+        with:
+          repository: sorensenclara/geneos-web-admin
+          ref: etapa-1
+          path: web-admin
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Instalar dependencias
+        run: python -m pip install jinja2 markupsafe pillow
+      - name: Generar recursos institucionales
+        run: python build.py
+        working-directory: geneos-fuente
+      - name: Generar GERP desde Web Admin
+        env:
+          GENEOS_WEB_DIR: ${{ github.workspace }}/geneos-fuente
+        run: |
+          python web-admin/renderer/export.py gerp --out "${{ github.workspace }}/resultado" --no-project-files
+          test -s resultado/gerp-web/index.html
+          test -s resultado/gerp-web/assets/css/product.css
+      - name: Configurar GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Subir sitio generado
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: resultado/gerp-web
+      - name: Publicar
+        id: deployment
         uses: actions/deploy-pages@v4
