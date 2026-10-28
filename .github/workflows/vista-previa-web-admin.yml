@@ -1,5 +1,7 @@
 name: Vista previa GERP desde Web Admin (sin publicar)
 on:
+  push:
+    branches: [preparar-gerp-desde-web-admin]
   workflow_dispatch:
 
 permissions:
