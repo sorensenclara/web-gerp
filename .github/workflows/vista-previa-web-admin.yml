@@ -36,7 +36,7 @@ jobs:
         env:
           GENEOS_WEB_DIR: ${{ github.workspace }}/geneos-fuente
         run: |
-          python renderer/export.py gerp --out "${{ github.workspace }}/resultado" --no-project-files
+          python web-admin/renderer/export.py gerp --out "${{ github.workspace }}/resultado" --no-project-files
           test -s resultado/gerp-web/index.html
           test -s resultado/gerp-web/assets/css/product.css
           test -s resultado/gerp-web/assets/css/site.css
