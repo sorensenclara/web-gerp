@@ -1,0 +1,47 @@
+name: Vista previa GERP desde Web Admin (sin publicar)
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  generar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Obtener fuente institucional (recursos de compilación)
+        uses: actions/checkout@v4
+        with:
+          repository: sorensenclara/geneos
+          ref: modo-claro-oscuro
+          path: geneos-fuente
+      - name: Obtener generador de GENEOS Web Admin
+        uses: actions/checkout@v4
+        with:
+          repository: sorensenclara/geneos-web-admin
+          ref: etapa-1
+          path: web-admin
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Instalar dependencias del generador
+        run: python -m pip install jinja2 markupsafe pillow
+      - name: Generar recursos institucionales
+        run: python build.py
+        working-directory: geneos-fuente
+      - name: Exportar GERP con las plantillas de Web Admin
+        env:
+          GENEOS_WEB_DIR: ${{ github.workspace }}/geneos-fuente
+        run: |
+          python renderer/export.py gerp --out "${{ github.workspace }}/resultado" --no-project-files
+          test -s resultado/gerp-web/index.html
+          test -s resultado/gerp-web/assets/css/product.css
+          test -s resultado/gerp-web/assets/css/site.css
+      - name: Guardar vista previa descargable (no se despliega)
+        uses: actions/upload-artifact@v4
+        with:
+          name: gerp-desde-web-admin
+          path: resultado/gerp-web/
+          if-no-files-found: error
+          retention-days: 14
