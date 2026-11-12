@@ -3,7 +3,10 @@
 
 /* ---------- Colores del header por producto (identidad existente) ----------
    --hd-link: enlaces · --hd-hover: hover y página actual · --hd-line: subrayado · --hd-btn: botón "Solicitar demo" */
-.pp-theme-gerp   { --hd-link: #3b485a; --hd-hover: #99146a; --hd-line: #99146a; --hd-btn: #0b6b33; --hd-btn-hover: #065223; }
+.pp-theme-gerp   { --hd-link: #3b485a; --hd-hover: #99146a; --hd-line: #99146a; --hd-btn: #99146a; --hd-btn-hover: #7a0f55; }
+/* GERP: botones generales en el púrpura de la marca. Los de cada plan (tarjetas, comparador, páginas Lite/Core/Plus)
+   llevan su color en style="" y no cambian. Gana sobre product.css por especificidad. */
+.standalone.pp-theme-gerp, .standalone .pp-theme-gerp { --pp-btn: #99146a; --pp-btn-hover: #7a0f55; --pp-btn2: #99146a; --pp-btn2-text: #fff; }
 .pp-theme-geagro { --hd-link: #0b3422; --hd-hover: #148238; --hd-line: #148238; --hd-btn: #1e7d3b; --hd-btn-hover: #0b3422; }
 .pp-theme-gema   { --hd-link: #0e2646; --hd-hover: #1455a0; --hd-line: #ec6c05; --hd-btn: #1455a0; --hd-btn-hover: #0e2646; }
 
@@ -41,6 +44,26 @@
   .standalone .site-nav .nav-cta a { margin: 0; text-align: center; padding: 14px 20px; }
 }
 @media (max-width: 420px) { .standalone .brand img { height: 34px; } }
+
+/* ---------- Submenú del header (Planes) ---------- */
+.standalone .site-nav .has-sub.is-active > a { color: var(--hd-hover); }
+.standalone .site-nav .sub-toggle { color: var(--hd-link); margin-left: -6px; }
+.standalone .site-nav .has-sub:hover .sub-toggle .icon, .standalone .site-nav .has-sub.open .sub-toggle .icon { transform: rotate(180deg); }
+.standalone .site-nav .sub { left: 4px; min-width: 300px; background: #fff; border-top: 3px solid var(--hd-line); border-radius: 0 0 12px 12px;
+  padding: 8px; box-shadow: 0 16px 34px rgba(15, 23, 42, .14); }
+.standalone .site-nav .sub-planes a { display: flex; align-items: center; gap: 12px; padding: 10px 12px; border-radius: 8px;
+  border-left: 4px solid var(--plan-color); color: var(--hd-link); white-space: normal; }
+.standalone .site-nav .sub-planes img { width: 28px; height: auto; flex: none; }
+.standalone .site-nav .sub-planes b { display: block; color: var(--plan-color); font-weight: 700; font-size: 16px; line-height: 1.2; }
+.standalone .site-nav .sub-planes small { display: block; font-size: 13px; line-height: 1.3; color: #5a6472; }
+.standalone .site-nav .sub-planes a:hover, .standalone .site-nav .sub-planes a[aria-current="page"] {
+  background: color-mix(in srgb, var(--plan-color) 9%, #fff); color: var(--hd-link); }
+.standalone .site-nav .sub-planes li + li { margin-top: 4px; }
+@media (max-width: 920px) {
+  .standalone .site-nav .sub { left: 0; min-width: 0; border-top: 0; border-radius: 0; box-shadow: none; padding: 0 0 12px; }
+  .standalone .site-nav .sub-planes a { padding: 12px; font-size: 16px; }
+  .standalone .site-nav .sub-planes a[aria-current="page"] { box-shadow: none; }
+}
 
 /* ---------- Footer ---------- */
 .standalone .footer-geneos img { width: 120px; height: auto; opacity: .85; }
